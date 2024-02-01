@@ -1,0 +1,36 @@
+@import "../../scss/colors.scss";
+
+.user{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px $silver;
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+    &:hover{
+        background: $silver;
+    }
+    .userMainInfo{
+        display: flex;
+        .name{
+            margin-right: 10px;
+        }
+        .nickname{
+            color: $azure_radiance;
+        }
+    }
+    .links,
+    .footer{
+        display: flex;
+    }
+    .footer{
+        justify-content: space-between;
+    }
+    .links{
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,15 @@
+@import "../../scss/mixins.scss";
+@import "../../scss/colors.scss";
+
+.albumsWrapper{
+    height: 100vh;
+    width: 100%;
+    @include flex-center;
+    .albums{
+        width: 800px;
+        height: fit-content;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 3px 2px 8px $tundora;
+    }
+}

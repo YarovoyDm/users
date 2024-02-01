@@ -1,0 +1,15 @@
+.post{
+    padding: 5px;
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .postTitle{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+    }
+    .postBody{
+        text-transform: capitalize;
+    }
+}

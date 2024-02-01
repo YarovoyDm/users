@@ -1,0 +1,31 @@
+@import "../../scss/colors.scss";
+@import "../../scss/mixins.scss";
+
+.usersWrapper{
+    height: 100vh;
+    width: 100%;
+    @include flex-center;
+    .users{
+        width: 500px;
+        height: fit-content;
+        min-height: 730px;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 3px 2px 8px $tundora;
+        .sort{
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .usernameInput{
+            height: 25px;
+            border: solid 1px $tundora;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            outline: none;
+            &:focus{
+                border: solid 1px $tundora; 
+                outline: none;
+            }
+        }
+    }
+}
